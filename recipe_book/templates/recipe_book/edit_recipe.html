@@ -1,10 +1,10 @@
 {% extends 'recipe_book/base.html' %}
 
 {% block content %}
-<h1>Редактировать рецепт</h1>
+<h1>Edit Recipe</h1>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Сохранить изменения</button>
+    <button type="submit">Save Changes</button>
 </form>
 {% endblock %}

@@ -1,10 +1,10 @@
 {% extends 'recipe_book/base.html' %}
 
 {% block content %}
-<h1>Вход на сайт</h1>
+<h1>Login</h1>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Войти</button>
+    <button type="submit">Login</button>
 </form>
 {% endblock %}
