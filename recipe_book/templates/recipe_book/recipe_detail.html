@@ -3,9 +3,9 @@
 {% block content %}
     <h1>{{ recipe.title }}</h1>
     <p>{{ recipe.description }}</p>
-    <p>Cooking Time: {{ recipe.cooking_time }} minutes</p>
+    <p>Время готовки: {{ recipe.cooking_time }} минут</p>
     <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
-    <h2>Steps:</h2>
+    <h2>Шаги приготовления:</h2>
     <p>{{ recipe.steps }}</p>
-    <a href="{% url 'edit_recipe' recipe.pk %}">Edit Recipe</a>
+    <a href="{% url 'edit_recipe' recipe.pk %}">Редактировать рецепт</a>
 {% endblock %}
