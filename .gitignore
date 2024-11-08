@@ -10,6 +10,7 @@ media
 /media/
 /static/
 *.sqlite3
+settings.py
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -352,3 +353,37 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django,pycharm+all
+# Игнорирование временных файлов и папок
+*.pyo
+*.class
+.env*
+*.db
+*.swp
+.DS_Store
+
+# Игнорирование файлов конфигурации сервера и среды развертывания
+nginx.conf
+gunicorn.conf
+uwsgi.ini
+docker-compose.yml
+dockerfile
+*.env.production
+*.env.development
+*.env.test
+
+# Игнорирование медиафайлов, если они не должны храниться в репозитории
+media/
+/static/cache/
+
+# Игнорирование файлов и папок, связанных с тестированием (если не нужно хранить их)
+test_data/
+
+# Игнорирование файлов с бинарными данными или большими объемами данных
+*.pdf
+*.mp4
+*.jpg
+*.png
+
+# Игнорирование локальных настроек пользователя
+.pycharm.*
+.vscode/
